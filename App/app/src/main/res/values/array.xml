@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="test">
+        <item>야채/채소</item>
+        <item>과일</item>
+        <item>육류</item>
+        <item>해산물</item>
+        <item>소스</item>
+        <item>면류</item>
+        <item>ETC</item>
+    </string-array>
+
+    <string-array name="test2">
+        <item>개수</item>
+        <item>g</item>
+        <item>kg</item>
+        <item>ml</item>
+        <item>L</item>
+    </string-array>
+</resources>

@@ -1,0 +1,325 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/main_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="10dp"
+        android:text="&quot;&quot;의 냉장고"
+        android:textColor="#000000"
+        android:textSize="26sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.06"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <ImageButton
+        android:id="@+id/suljung"
+        android:layout_width="37dp"
+        android:layout_height="35dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="10dp"
+        android:background="#00ffffff"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0"
+        app:srcCompat="@drawable/suljung"
+        tools:ignore="MissingConstraints" />
+
+    <ImageButton
+        android:id="@+id/bell"
+        android:layout_width="37dp"
+        android:layout_height="35dp"
+        android:layout_marginTop="10dp"
+        android:background="#00ffffff"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.866"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0"
+        app:srcCompat="@drawable/bell"
+        tools:ignore="MissingConstraints" />
+
+    <ImageButton
+        android:id="@+id/recipe_set"
+        android:layout_width="30dp"
+        android:layout_height="35dp"
+        android:background="#00ffffff"
+        app:layout_constraintBottom_toBottomOf="@+id/textView"
+        app:layout_constraintEnd_toEndOf="@+id/suljung"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toEndOf="@+id/bell"
+        app:layout_constraintTop_toTopOf="@+id/textView"
+        app:layout_constraintVertical_bias="0.6"
+        app:srcCompat="@drawable/recipe_set" />
+
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:text="오늘의 메뉴"
+        android:textColor="#000000"
+        android:textSize="22sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.018"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.605"
+        tools:ignore="MissingConstraints" />
+
+    <ImageButton
+        android:id="@+id/american"
+        android:layout_width="75dp"
+        android:layout_height="95dp"
+        android:layout_marginStart="24dp"
+        android:background="#00ffffff"
+        app:layout_constraintBottom_toBottomOf="@+id/korean"
+        app:layout_constraintEnd_toStartOf="@+id/china"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toEndOf="@+id/korean"
+        app:layout_constraintTop_toTopOf="@+id/korean"
+        app:layout_constraintVertical_bias="0.0"
+        app:srcCompat="@drawable/american"
+        tools:ignore="MissingConstraints" />
+
+    <ImageButton
+        android:id="@+id/seafood"
+        android:layout_width="75dp"
+        android:layout_height="95dp"
+        android:background="#00ffffff"
+        app:layout_constraintBottom_toBottomOf="@+id/meat"
+        app:layout_constraintEnd_toEndOf="@+id/china"
+        app:layout_constraintStart_toStartOf="@+id/china"
+        app:layout_constraintTop_toTopOf="@+id/meat"
+        app:srcCompat="@drawable/seafood"
+        tools:ignore="MissingConstraints" />
+
+    <ImageButton
+        android:id="@+id/japan"
+        android:layout_width="75dp"
+        android:layout_height="95dp"
+        android:background="#00ffffff"
+        app:layout_constraintBottom_toBottomOf="@+id/korean"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.952"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/korean"
+        app:layout_constraintVertical_bias="0.0"
+        app:srcCompat="@drawable/japan"
+        tools:ignore="MissingConstraints" />
+
+    <ImageButton
+        android:id="@+id/korean"
+        android:layout_width="75dp"
+        android:layout_height="95dp"
+        android:background="#00ffffff"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.047"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.731"
+        app:srcCompat="@drawable/korean"
+        tools:ignore="MissingConstraints" />
+
+    <ImageButton
+        android:id="@+id/bunsik"
+        android:layout_width="75dp"
+        android:layout_height="95dp"
+        android:background="#00ffffff"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/korean"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/korean"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.897"
+        app:srcCompat="@drawable/bunsik"
+        tools:ignore="MissingConstraints" />
+
+    <ImageButton
+        android:id="@+id/meat"
+        android:layout_width="75dp"
+        android:layout_height="95dp"
+        android:background="#00ffffff"
+        app:layout_constraintBottom_toBottomOf="@+id/bunsik"
+        app:layout_constraintEnd_toEndOf="@+id/american"
+        app:layout_constraintStart_toStartOf="@+id/american"
+        app:layout_constraintTop_toTopOf="@+id/bunsik"
+        app:srcCompat="@drawable/meat"
+        tools:ignore="MissingConstraints" />
+
+    <ImageButton
+        android:id="@+id/random"
+        android:layout_width="92dp"
+        android:layout_height="91dp"
+        android:background="#00ffffff"
+        app:layout_constraintBottom_toBottomOf="@+id/seafood"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.98"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/seafood"
+        app:layout_constraintVertical_bias="0.0"
+        app:srcCompat="@drawable/random"
+        tools:ignore="MissingConstraints" />
+
+    <ImageButton
+        android:id="@+id/china"
+        android:layout_width="75dp"
+        android:layout_height="95dp"
+        android:layout_marginEnd="20dp"
+        android:background="#00ffffff"
+        app:layout_constraintBottom_toBottomOf="@+id/american"
+        app:layout_constraintEnd_toStartOf="@+id/japan"
+        app:layout_constraintTop_toTopOf="@+id/american"
+        app:layout_constraintVertical_bias="0.0"
+        app:srcCompat="@drawable/china"
+        tools:ignore="MissingConstraints" />
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/constraintLayout"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:background="@drawable/circle"
+        app:layout_constraintBottom_toBottomOf="parent"
+        tools:layout_editor_absoluteX="1dp">
+
+
+        <ImageButton
+            android:id="@+id/search_btn"
+            android:layout_width="65dp"
+            android:layout_height="60dp"
+            app:layout_constraintBottom_toBottomOf="@+id/home"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.206"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.0"
+            app:srcCompat="@drawable/search" />
+
+        <ImageButton
+            android:id="@+id/home"
+            android:layout_width="65dp"
+            android:layout_height="60dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.501"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/refrigerator"
+            app:layout_constraintVertical_bias="0.0"
+            app:srcCompat="@drawable/home" />
+
+        <ImageButton
+            android:id="@+id/refrigerator"
+            android:layout_width="65dp"
+            android:layout_height="60dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.799"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="1.0"
+            app:srcCompat="@drawable/refrigerator" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/state"
+        android:layout_width="50dp"
+        android:layout_height="65dp"
+        app:layout_constraintBottom_toTopOf="@+id/textView"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.044"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/main_name"
+        app:layout_constraintVertical_bias="0.076">
+
+        <ImageView
+            android:id="@+id/imageView5"
+            android:layout_width="45dp"
+            android:layout_height="45dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.6"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.2"
+            tools:srcCompat="@tools:sample/avatars" />
+
+        <TextView
+            android:id="@+id/textView9"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="이름"
+            android:textSize="14dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/imageView5" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/state2"
+        android:layout_width="50dp"
+        android:layout_height="65dp"
+        app:layout_constraintBottom_toBottomOf="@+id/state"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.044"
+        app:layout_constraintStart_toEndOf="@+id/state"
+        app:layout_constraintTop_toTopOf="@+id/state">
+
+        <ImageView
+            android:id="@+id/imageView7"
+            android:layout_width="45dp"
+            android:layout_height="45dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.6"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.2"
+            tools:srcCompat="@tools:sample/avatars" />
+
+        <TextView
+            android:id="@+id/textView10"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="이름"
+            android:textSize="14dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/imageView7" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <ImageView
+        android:id="@+id/imageView4"
+        android:layout_width="345dp"
+        android:layout_height="233dp"
+        android:layout_marginTop="4dp"
+        app:layout_constraintBottom_toTopOf="@+id/textView"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/state"
+        app:srcCompat="@drawable/mainrecommand" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
